@@ -1,0 +1,14 @@
+select count(*) from employee where comm is null;
+
+  COUNT(*)
+----------
+        10
+
+SQL>  select * from employee where hiredate like '%-FEB-81' and comm>400;
+
+     EMPNO ENAME                                              JOB
+---------- -------------------------------------------------- ----------
+HIREDATE         MGR        SAL       COMM     DEPTNO
+--------- ---------- ---------- ---------- ----------
+      7521 ward                                               salesman
+22-FEB-81       7698       1250        500         30
